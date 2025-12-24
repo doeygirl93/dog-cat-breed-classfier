@@ -1,0 +1,1 @@
+ts is pretty peak classfier for cats n dogs. I was trying out a new way to orgnize and do my AI models and I LOVE THIS WAY. I feel like using cell by cell notebooks has made me a worse coder bc a good amount of bugs is because i didn't do the code in order but like celll by cell kinda. its like werid lol. but Enjoy!
