@@ -6,7 +6,6 @@ import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
 
 NUM_WORKERS = 4
-
 def create_data_setup (BATCH_SIZE:int, num_workers:int,):
 
 

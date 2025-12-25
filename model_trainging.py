@@ -29,3 +29,7 @@ save_model(model, target_dir="models", model_name="cat_dog_breed_classfier.pth")
 
 
 #pretty much done!!!!
+
+
+#CHANGES:
+#added torch bc issure with training
