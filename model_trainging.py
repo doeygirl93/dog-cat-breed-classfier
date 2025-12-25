@@ -1,5 +1,5 @@
 import torch
-from torch import device, nn
+from torch import nn
 import data_setup, model_nn_arch, epoch_loop, save_logic
 BATCH_SIZE = 64
 NUM_WORKERS = 4
@@ -11,7 +11,7 @@ DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 train_loader, test_loader, CLASS_NAMES = data_setup.create_data_setup(BATCH_SIZE, NUM_WORKERS)
 
 # get model
-model = model_nn_arch.define_nn_arch().to(device)
+model = model_nn_arch.define_nn_arch().to(DEVICE)
 
 #loss n optim
 loss_fn = nn.CrossEntropyLoss()
