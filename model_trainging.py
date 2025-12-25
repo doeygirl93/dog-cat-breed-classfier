@@ -1,4 +1,5 @@
 import data_setup, model_nn_arch, epoch_loop, save_logic
+import torch
 from torch import device, nn
 
 BATCH_SIZE = 64
