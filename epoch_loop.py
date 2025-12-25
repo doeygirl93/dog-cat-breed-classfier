@@ -66,7 +66,7 @@ def train(model, train_dataloader, test_dataloader, loss_fn, optimizer, epochs, 
         train_loss, train_acc = one_train_step(model, train_dataloader, loss_fn, optimizer, device)
         test_loss, test_acc = one_test_step(model, test_dataloader, loss_fn, device)
         
-        print(f"Epoch; {epoch+1} --- Train loss: {train_loss:,4f} --- Test loss: {test_loss:.4f} --- Test accuracy: {test_acc:.4f}")
+        print(f"Epoch; {epoch+1} --- Train loss: {train_loss:.4f} --- Test loss: {test_loss:.4f} --- Test accuracy: {test_acc:.4f}")
         
         
         results["train_loss"].append(train_loss)
