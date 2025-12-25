@@ -1,7 +1,6 @@
-import data_setup, model_nn_arch, epoch_loop, save_logic
 import torch
 from torch import device, nn
-
+import data_setup, model_nn_arch, epoch_loop, save_logic
 BATCH_SIZE = 64
 NUM_WORKERS = 4
 LEARNING_RATE = 0.001
@@ -22,9 +21,7 @@ optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
 epoch_loop.train(model, train_loader, test_loader, loss_fn, optimizer, epochs=EPOCHS, device=DEVICE)
 
-save_logic.save_model(model, DEVICE)
-
-save_model(model, target_dir="models", model_name="cat_dog_breed_classfier.pth")
+save_logic.save_model(model, target_dir="models", model_name="cat_dog_breed_classfier.pth")
 
 
 
