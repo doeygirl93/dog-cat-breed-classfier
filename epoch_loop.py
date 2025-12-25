@@ -41,8 +41,8 @@ def one_test_step(model, dataloader, loss_fn, device):
             X, y = X.to(device), y.to(device)
             
             test_pred = model(X)
-            loss += loss_fn(test_pred, y)
-            test_loss += loss.item()
+            batch_loss = loss_fn(test_pred, y)
+            test_loss += batch_loss.item()
             
             test_pred_labels = test_pred.argmax(dim=1)
             test_acc += (test_pred_labels == y).sum().item()/len(test_pred_labels)
